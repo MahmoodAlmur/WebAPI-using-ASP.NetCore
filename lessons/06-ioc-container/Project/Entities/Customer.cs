@@ -33,19 +33,24 @@ public class GooglePayment : IPayment
 }
 
 
-public class Customer
+public interface ICustomer
+{
+    string Buy();
+}
+
+
+public class Customer(IPayment payment) : ICustomer
 {
     // Tited Coupled
     //CashPayment cashPayment = new CashPayment();
-    public Customer(IPayment payment)
-    {
-        this.Payment = payment;
-    }
-
-    public IPayment Payment;
+    // public Customer(IPayment payment)
+    // {
+    //     this.Payment = payment;
+    // }
+    // public IPayment Payment;
 
     public string Buy()
     {
-        return $"buying using {Payment.Pay()}";
+        return $"buying using {payment.Pay()}";
     }
 }

@@ -5,10 +5,10 @@ namespace DependencyInjection.Controllers;
 
 [ApiController]
 [Route("customer")]
-public class CustomerController : ControllerBase
+public class CustomerController(ICustomer customer) : ControllerBase
 {
-    Customer customer = new Customer(new GooglePayment());
-
+    //private ICustomer Customer = customer;
+    
 
     [HttpGet]
     public IActionResult GetCustomers()
