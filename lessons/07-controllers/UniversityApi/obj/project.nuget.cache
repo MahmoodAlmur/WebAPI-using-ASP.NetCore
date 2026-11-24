@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "giOHXMVFbqM=",
+  "dgSpecHash": "dR14OwwgLaE=",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\asp.netcore\\lessons\\07-controllers\\UniversityApi\\UniversityApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.15\\microsoft.aspnetcore.openapi.10.0.15.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.openapi\\2.13.0\\microsoft.openapi.2.13.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.3.1\\swashbuckle.aspnetcore.swaggerui.10.3.1.nupkg.sha512"
+  ],
   "logs": []
 }

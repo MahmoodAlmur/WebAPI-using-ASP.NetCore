@@ -1,0 +1,103 @@
+@host = http://localhost:5120
+
+### ===== Students =====
+
+### All students (200)
+GET {{host}}/api/students
+
+### One student (200)
+GET {{host}}/api/students/1
+
+### Student that does not exist (404)
+GET {{host}}/api/students/99
+
+### Courses of a student (200)
+GET {{host}}/api/students/1/courses
+
+### Create a student (201 + Location)
+POST {{host}}/api/students
+Content-Type: application/json
+
+{ "name": "Lina Hassan", "email": "lina@example.com" }
+
+### Create a student with an existing email (409)
+POST {{host}}/api/students
+Content-Type: application/json
+
+{ "name": "Another Ahmed", "email": "ahmed@example.com" }
+
+### Update a student (204)
+PUT {{host}}/api/students/3
+Content-Type: application/json
+
+{ "name": "Khaled N.", "email": "khaled@example.com" }
+
+### Delete a student without enrollments (204)
+DELETE {{host}}/api/students/3
+
+### Delete a student that has enrollments (409)
+DELETE {{host}}/api/students/1
+
+### ===== Courses =====
+
+### All courses (200)
+GET {{host}}/api/courses
+
+### One course (200)
+GET {{host}}/api/courses/1
+
+### Students of a course (200)
+GET {{host}}/api/courses/1/students
+
+### Create a course (201 + Location)
+POST {{host}}/api/courses
+Content-Type: application/json
+
+{ "title": "Docker Basics" }
+
+### Create a course with an existing title (409)
+POST {{host}}/api/courses
+Content-Type: application/json
+
+{ "title": "C# Basics" }
+
+### Update a course (204)
+PUT {{host}}/api/courses/3
+Content-Type: application/json
+
+{ "title": "SQL Server Essentials" }
+
+### Delete a course that has students (409)
+DELETE {{host}}/api/courses/1
+
+### ===== Enrollments =====
+
+### All enrollments (200)
+GET {{host}}/api/enrollments
+
+### Enroll a student (201 + Location)
+POST {{host}}/api/enrollments
+Content-Type: application/json
+
+{ "studentId": 2, "courseId": 1 }
+
+### Enroll in a course twice (409)
+POST {{host}}/api/enrollments
+Content-Type: application/json
+
+{ "studentId": 1, "courseId": 1 }
+
+### Enroll a student that does not exist (404)
+POST {{host}}/api/enrollments
+Content-Type: application/json
+
+{ "studentId": 99, "courseId": 1 }
+
+### Enroll in a course that does not exist (404)
+POST {{host}}/api/enrollments
+Content-Type: application/json
+
+{ "studentId": 1, "courseId": 99 }
+
+### Remove an enrollment (204)
+DELETE {{host}}/api/enrollments/2

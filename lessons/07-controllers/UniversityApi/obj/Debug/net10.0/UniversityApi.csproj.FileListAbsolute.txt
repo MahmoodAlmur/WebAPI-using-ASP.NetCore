@@ -27,3 +27,11 @@ C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0
 C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0\UniversityApi.pdb
 C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0\UniversityApi.genruntimeconfig.cache
 C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0\ref\UniversityApi.dll
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0\UniversityApi.csproj.AssemblyReference.cache
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0\UniversityApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0\Universi.5F6F81EE.Up2Date
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\bin\Debug\net10.0\UniversityApi.xml
+C:\Users\DELL\asp.netcore\lessons\07-controllers\UniversityApi\obj\Debug\net10.0\UniversityApi.xml
